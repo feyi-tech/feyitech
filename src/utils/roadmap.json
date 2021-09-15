@@ -1,0 +1,101 @@
+[
+    {
+        "icon": "",
+        "title": "Q2 2021",
+        "description": "Token and website deployment",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q2 2021",
+        "description": "PanCakeSwap listing",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q2 2021",
+        "description": "CoinGecko and CoinMarketCap listing",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q2 2021",
+        "description": "Smart contract audit",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q3 2021",
+        "description": "Heavy mainstream media promotion",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q4 2021",
+        "description": "MoonWojak iOS and Android game",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q4 2021",
+        "description": "MoonWojak iOS and Android game promotion",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q1 2022",
+        "description": "MoonWojak Freelancing jobs Dapp",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q1 2022",
+        "description": "MoonWojak Freelancing jobs Dapp promotion",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q2 2022",
+        "description": "MoonWojak smart wallet(smart contract backed wallet). The first of its kind",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q2 2022",
+        "description": "MoonWojak smart wallet promotion",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q3 2022",
+        "description": "MoonWojak NFT marketplace",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q3 2022",
+        "description": "MoonWojak NFT marketplace promotion",
+        "active": false,
+        "done": true
+    },
+    {
+        "icon": "",
+        "title": "Q4 2022",
+        "description": "The begining of an endless project ideas contest for MoonWojak",
+        "active": false,
+        "done": true
+    }
+    
+]

@@ -1,0 +1,44 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');*/
+
+$sidebar-width: 270px;
+$icon-size: 35px;
+$breakpoint-xs: 480px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$bg: #f4f4f4;
+$color: #222329;
+
+:root {
+  font-size: 100%;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: $bg !important;
+  color: $color !important;
+  font-size: 16px  !important;
+}
+
+*{box-sizing: border-box;}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'SpaceGrotesk-Regular', Arial, Helvetica, sans-serif;
+  opacity: 0.8;
+  line-height: 1.4;
+  padding: 0 0 10px
+}
+
+textarea {
+  resize: none !important;
+}

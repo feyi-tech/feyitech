@@ -1,0 +1,14 @@
+{
+    "title": "We bring ideas to life",
+    "desc": "Become our client and get the best services and emotions with us.",
+    "interest-label": "I'm interested in:",
+    "name-title": "Name / Company",
+    "email-title": "Email",
+    "message-title": "Discuss your idea with us",
+    "attach-file": "Attach a file",
+    "file-rules": "Allowed types:\n.doc, .docx, .odt, .pdf, .txt, .rtf, .jpg, .jpeg, .png\nOnly 3 files could be attached.",
+    "submit-text": "Send request",
+    "submit-msg": "Your request has been submitted. One of our team members will contact you shortly. Thanks.",
+    "submit-msg-error": "Our server is getting to many request at this time, so we couldn't process your query. Please contact us by email.",
+    "submit-msg-autoresponse": "Your request has been submitted. One of our team members will contact you shortly. Thanks."
+}
