@@ -67,6 +67,7 @@
     "react-syntax-highlighter": "^15.4.4",
     "react-time-ago": "^7.1.1",
     "sass": "^1.37.0",
+    "sc-react": "^0.1.1",
     "sequelize": "^6.6.5",
     "stylis": "^4.0.10",
     "stylis-plugin-rtl": "^2.1.0",

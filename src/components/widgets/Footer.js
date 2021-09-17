@@ -1,4 +1,4 @@
-import { Text, VStack, HStack, Image, Box, Flex } from "@chakra-ui/react"
+import { Text, VStack, HStack, Image, Box, Flex, useColorModeValue } from "@chakra-ui/react"
 import useTranslation from "next-translate/useTranslation"
 import { SOCIAL_LINKS, CONTACT } from "../../utils/c"
 import Container from "./Container"
@@ -8,9 +8,11 @@ const logo = "/logo.png"
 
 const Footer = () => {
     const { t } = useTranslation("footer")
+    const bg = useColorModeValue("pageBg.light", "pageBg.dark")
+    const color = useColorModeValue("pageColor.light", "pageColor.dark")
 
     return (
-        <VStack m="0px !important" w="100%" minH="200px" zIndex="20" pos="relative" justifyContent="center" alignItems="center">
+        <VStack bg={bg} color={color} zIndex="12" m="0px !important" w="100%" minH="200px" zIndex="20" pos="relative" justifyContent="center" alignItems="center">
             <Box as="hr" w="100%" />
             <Container>
                 <Flex w="100%" flexDirection={{base: "column", md: "row"}} flexWrap="wrap" 

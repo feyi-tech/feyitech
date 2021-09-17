@@ -17,7 +17,8 @@ const MenuItem = ({as, children, href, ...props}) => {
 
     return (
         <Text as={as || "div"} ml="0.7rem" m={{base: "10px auto", md: "auto 10px"}} fontWeight="bold" textTransform="capitalize" 
-        _hover={{textDecoration: "underline"}} active={asPath == href} href={href} dataASPath={asPath == href} {...props}>
+        _hover={{textDecoration: "underline"}} active={asPath == href} href={href} dataASPath={asPath == href} 
+        {...props}>
             {children}
         </Text>
     )
@@ -104,12 +105,12 @@ const Nav = ({enableMobileStick, ...props}) => {
             </HStack>
             <Flex flexDirection={{base: "column", md: "row"}} alignItems="center" 
             display={{base: !menuOpened? "none" : "flex", md: "flex"}}>
-                <MenuItem as={Link} href="/services">{t("services")}</MenuItem>
-                <MenuItem as={Link} href="/projects">{t("works")}</MenuItem>
-                {/* <MenuItem as={Link} href="/affiliate">{t("affiliate")}</MenuItem> */}
-                <MenuItem as={Link} href="/products">{t("products")}</MenuItem>
-                <MenuItem as={Link} href="/packages">{t("packages")}</MenuItem>
-                <MenuItem as={Link} href="/about">{t("about-us")}</MenuItem>
+                <MenuItem as={Link} href="/services" onClick={() => {setMenuOpened(false)}}>{t("services")}</MenuItem>
+                <MenuItem as={Link} href="/projects" onClick={() => {setMenuOpened(false)}}>{t("works")}</MenuItem>
+                {/* <MenuItem as={Link} href="/affiliate" onClick={() => {setMenuOpened(false)}}>{t("affiliate")}</MenuItem> */}
+                <MenuItem as={Link} href="/products" onClick={() => {setMenuOpened(false)}}>{t("products")}</MenuItem>
+                <MenuItem as={Link} href="/packages" onClick={() => {setMenuOpened(false)}}>{t("packages")}</MenuItem>
+                <MenuItem as={Link} href="/about" onClick={() => {setMenuOpened(false)}}>{t("about-us")}</MenuItem>
                 {/* <MenuItem as={Link} href="/blog">{t("blog")}</MenuItem> */}
                 <MenuItem as={LinkButton} href="/contact" background={"primaryButtonBg !important"} color="primaryButtonColor">{t("contact")}</MenuItem>
             </Flex>

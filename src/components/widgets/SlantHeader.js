@@ -1,9 +1,24 @@
-import { Text, VStack } from "@chakra-ui/react";
+import { Text, VStack, Box } from "@chakra-ui/react";
 import { H1 } from "../pages/services";
 import TextView from "./TextView";
+import SkewedContainer from 'sc-react';
 
 
 export default function SlantHeader({bg, color, bgInverse, title, desc, ...props}) {
+
+    return (
+        <Box w="100%">
+            <SkewedContainer
+            bottom="right" 
+            bgColor="#222329"
+            >
+                <Box color="#f4f4f4">
+                    <H1 px={{base: "25px"}}>{title}</H1>
+                    <TextView as="p" px={{base: "25px"}} py="0.5rem !important" fontWeight="400">{desc}</TextView>
+                </Box>
+            </SkewedContainer>
+        </Box>
+    )
 
 
     return (
