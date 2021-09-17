@@ -37,12 +37,15 @@ const Product = ({noDetails, noLink, t, lang, id, priority, screenshot, screensh
         <Box w={{base: "100%", md: "50%"}} pr="25px" pb="25px" {...props}>
             <VStack w="100%" as={!noLink? Link : "div"} href={!noLink? buildProductLink(name, id) : ""} transition="0.3s" borderRadius="6px" pos="relative" overflow="hidden" 
             boxShadow="0 8px 60px 0 rgb(103 151 255 / 11%), 0 12px 90px 0 rgb(103 151 255 / 11%)" border={border} 
-            role="group" p="0px !important">
+            role="group" p="0px !important" border="1px solid #dfdfdf">
                 <Image src={screenshotFull} w="100%" h="auto" maxW={{base: "430px", md: "530px"}} maxH={{base: "384px", md: "484px"}} />
                 {
                     !noDetails?
                     <>
-                        <Text as="div" bg={bg} mt="0px !important" h={{base: "70px", md: "100px"}} w="100%" p="28px" fontSize="17px" fontWeight="500" textAlign="center">
+                        <Text as="div" bg={bg} mt="0px !important" 
+                        minH={{base: "70px", md: "100px"}} 
+                        w="100%" p="28px" 
+                        fontSize="17px" fontWeight="500" textAlign="center">
                             {name}
                         </Text>
                         <Box bg={bgGray} w="100%" pos="absolute" bottom="0" p="25px" fontSize="14px" fontWeight="bold" textAlign="center" 

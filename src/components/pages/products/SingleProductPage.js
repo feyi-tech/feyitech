@@ -15,6 +15,7 @@ import Container from "../../widgets/Container";
 import Link from "../../widgets/Link";
 import Trans from "next-translate/Trans";
 import { CURRENCY } from "../../../utils/c";
+import SplitLayout from "../../widgets/SplitLayout";
 
 
 const Feature = ({id, image, title, desc, youtubeVideoId}) => {
@@ -69,7 +70,7 @@ const SingleProductPage = ({name, desc, sellingPrice, screenshotFull, screenshot
                                     {t("see-pricing")}
                             </Text>*/}
                             </Text>
-                            <HStack mt="1.5rem !important" justifyContent="flex-start" alignItems="center">
+                            {/* <HStack mt="1.5rem !important" justifyContent="flex-start" alignItems="center">
                                 <Box textTransform="uppercase" textAlign="center" w="180px" h="50px" p="15px" mr="20px" 
                                 borderRadius=".25rem" transition=".15s" as={Link} href={demoLink} color={"#fff !important"} 
                                 bg="#007bff" _hover={{
@@ -84,7 +85,29 @@ const SingleProductPage = ({name, desc, sellingPrice, screenshotFull, screenshot
                                 }}>
                                     {t("buy-now")}
                                 </Box>
-                            </HStack>
+                            </HStack> */}
+                            <SplitLayout mt="40px !important" 
+                            alignItems={{base: "flex-start", md: "center"}} 
+                            justifyContent="flex-start">
+                                <SplitLayout.First w="auto">
+                                    <Box textTransform="uppercase" textAlign="center" w="180px" h="50px" p="15px" mr="20px" 
+                                    borderRadius=".25rem" transition=".15s" as={Link} href={demoLink} color={"#fff !important"} 
+                                    bg="#007bff" _hover={{
+                                        bg: "#0069d9"
+                                    }}>
+                                        {t("view-demo")}
+                                    </Box>
+                                </SplitLayout.First>
+                                <SplitLayout.Second>
+                                    <Box textTransform="uppercase" textAlign="center" w="180px" h="50px" p="15px" mr="20px" 
+                                    borderRadius=".25rem" transition=".15s" color={"#fff !important"} 
+                                    bg="#007bff" _hover={{
+                                        bg: "#0069d9"
+                                    }}>
+                                        {t("buy-now")}
+                                    </Box>
+                                </SplitLayout.Second>
+                            </SplitLayout>
                             <VStack mt="1.5rem !important" justifyContent="flex-start" alignItems="flex-start" fontSize="1.2em" fontWeight="400">
                                 <Box>
                                     <Trans i18nKey="products-single:latest-version" components={[

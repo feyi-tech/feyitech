@@ -8,6 +8,7 @@ import ContactForm from "../../widgets/ContactForm"
 import Jumbotron from "../../widgets/Jumbotron"
 import Link from "../../widgets/Link"
 import TextView from "../../widgets/TextView"
+import SplitLayout from "../../widgets/SplitLayout"
 
 const P = ({as, children, ...props}) => {
 
@@ -32,17 +33,21 @@ const ContactPage = ({servicesList}) => {
         link="" title={t('common:title')} url="/" description={t('common:sitedesc')}
         justifyContent="flex-start" alignItems="flex-start" pos="relative">
             <Container>
-                <HStack w="100%" p="0px !important" m="0px !important" justifyContent="space-around" alignItems="flex-start">
-                    <ContactForm services={services} m="0px !important" w={{base: "100%", md: "50%"}} />
-                    <Jumbotron w={{base: "100%", md: "auto"}} m={{base: "15px 0px !important", md: "0px !important"}} 
-                    justifyContent="flex-start" alignItems="flex-start" bg="transparent">
-                        <P as={Link} href={`mailto:${CONTACT.email}`} fontWeight="bold" textTransform="uppercase">{CONTACT.email}</P>
-                        <br />
-                        <P>{CONTACT.mobile}</P>
-                        <br /><br />
-                        <P as={TextView}>{CONTACT.address}</P>
-                    </Jumbotron>
-                </HStack>
+                <SplitLayout>
+                    <SplitLayout.First>
+                        <ContactForm services={services} m="0px !important" w="100%" />
+                    </SplitLayout.First>
+                    <SplitLayout.Second>
+                        <Jumbotron w={{base: "100%", md: "auto"}} m={{base: "15px 0px !important", md: "0px !important"}} 
+                        justifyContent="flex-start" alignItems="flex-start" bg="transparent">
+                            <P as={Link} href={`mailto:${CONTACT.email}`} fontWeight="bold" textTransform="uppercase">{CONTACT.email}</P>
+                            <br />
+                            <P>{CONTACT.mobile}</P>
+                            <br /><br />
+                            <P as={TextView}>{CONTACT.address}</P>
+                        </Jumbotron>
+                    </SplitLayout.Second>
+                </SplitLayout>
             </Container>
         </PageBody>
     )

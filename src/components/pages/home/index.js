@@ -50,15 +50,15 @@ const HomePage = ({projectsList}) => {
         justifyContent="flex-start" alignItems="flex-start">
             <HeaderBanner img1={bannerImage1} img2={bannerImage2} drop1={drop1} drop2={drop2} drop3={drop3} 
             title={t("common:title")} desc={t("common:sitedesc")} 
-            mb={{base: "35px !important", md: "55px !important"}} />
+            mb={{base: "55px !important", md: "75px !important"}} />
             
             <Container textAlign="left">
                 <VStack w={{base: "100%", md: "50%"}} justifyContent="flex-start" alignItems="flex-start">
-                    <Text as="p">
+                    <Text as="p" fontWeight="600">
                         {t("done-projects")}
                     </Text>
-                    <Text as="h2" fontSize="2.2rem" textTransform="uppercase" 
-                    color="#3929c5" lineHeight="1.1" mb="9rem" fontWeight="bold">
+                    <Text as="h2" fontSize={{base: "1.5rem", md: "2.2rem"}} textTransform="uppercase" 
+                    color="#3929c5" lineHeight="1.1" m="0px !important" mb={{base: "35px !important", md: "55px !important"}} fontWeight="bold">
                         {t("done-softwares")}
                     </Text>
                 </VStack>

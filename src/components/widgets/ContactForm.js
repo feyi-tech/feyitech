@@ -98,7 +98,7 @@ export default function ContactForm({title, desc, services, noBg, ...props}) {
 
 
     return (
-        <VStack w="100%" minW="356px" maxWidth="560px" minH={{base: "400px", md: "608px"}} boxShadow={!noBg? shadow : "none"} bg={!noBg? bg : "transparent"} color={!noBg? color : "initial"} 
+        <VStack w="100%" minW={{base: "100%", md: "560px"}} maxWidth={{base: "100%", md: "560px"}} minH={{base: "400px", md: "608px"}} boxShadow={!noBg? shadow : "none"} bg={!noBg? bg : "transparent"} color={!noBg? color : "initial"} 
         p="48px 24px" borderRadius="8px"
         {...props}>
             <H2 as={TextView}>{title || t("title")}</H2>

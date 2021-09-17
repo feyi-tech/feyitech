@@ -54,7 +54,7 @@ const NavButton = ({children, active, link, ...props}) => {
 
 
 
-const NavData = ({title, subtitle, desc, image, techs, buttonId, buttonText, ...props}) => {
+const NavData = ({t, title, subtitle, desc, image, techs, buttonId, buttonText, ...props}) => {
     const bg = "#f0b528 !important"
     const color = "#fff !important" 
     
@@ -67,11 +67,11 @@ const NavData = ({title, subtitle, desc, image, techs, buttonId, buttonText, ...
     
 
     return (
-        <VStack pb={{base: "70px !important", md: "120px !important"}} w="100%" {...props}>
-            <Flex w="100%" flexDirection={{base: subtitle? "column" : "column-reverse", md: subtitle? "row-reverse" : "row"}} 
+        <VStack px={{base: "7px !important", md: "0px !important"}} pb={{base: "70px !important", md: "120px !important"}} w="100%" {...props}>
+            <Flex w="100%" flexDirection={{base: subtitle? "column" : "column-reverse", md: subtitle? "row" : "row-reverse"}} 
             justifyContent={{base: "flex-start", md: "space-between"}} 
             alignItems={{base: "flex-start", md: "center"}}>
-                <H2 maxW="420px">{title}</H2>
+                <H2 maxW={{base: "100%", md: "420px"}} wordBreak="break-word">{title}</H2>
                 <Image src={image} w={subtitle? "320px" : "70px"} h={subtitle? "auto" : "70px"}/>
             </Flex>
             <VStack justifyContent="flex-start" alignItems="flex-start">
@@ -194,7 +194,7 @@ const ServicesPage = ({servicesList, workProcessesList}) => {
                             })
                         }
                     </VStack>
-                    <VStack w={{base: "100%", md: "calc(100% - 288px)"}} ml={{base: "0px !important", md: "112px !important"}} overflowX="hidden">
+                    <VStack w={{base: "100%", md: "calc(100% - 288px)"}} ml={{base: "0px !important", md: "112px !important"}}>
                         {
                             services.map((v, index) => {
                                 return (

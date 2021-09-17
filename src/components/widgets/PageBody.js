@@ -23,7 +23,7 @@ const PageBody = ({as, children, noChat, headerHasBanner, enableMobileStick, exc
         <VStack className="app" dir={localesMap[lang].isRTL? "rtl" : "ltr"} bg={bg} color={color} w="100%" h="100%" minH="100vh">
             <PageTitle link={link} title={title} url="/" description={description} image={image} type={type} updatedTime={updatedTime} />
             {nav}
-            <Box as={as || VStack} w="100%" h="100%" flexGrow={1} pt="70px" m="0px !important" pos="relative" {...props}>
+            <Box as={as || VStack} w="100%" h="100%" flexGrow={1} pt={{base: "45px", md: "70px"}} m="0px !important" pos="relative" {...props}>
                 {children}
             </Box>
             {

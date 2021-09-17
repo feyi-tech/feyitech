@@ -8,7 +8,9 @@
     "dev-1": "next dev -p 3005",
     "open": "start http://dev.domain.com:3005",
     "build": "next build",
-    "start": "next start -p 3005"
+    "start": "next start -p 3005",
+    "pm-start": "pm2 start npm --name \"websalient\" -i max -- start",
+    "pm-reload": "pm2 reload \"websalient\""
   },
   "author": "",
   "license": "ISC",

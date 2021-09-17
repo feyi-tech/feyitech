@@ -39,7 +39,7 @@ export const DB_DEFAULT_LOCALE = "en"
 export const CONTACT = {
     email: "hello@websalient.com",//"hello@websalient.com",
     mobile: "+39 323 826 7650",
-    address: "Prosecka 24, Prague \nCzech Republic"
+    address: "Via Nazionale 46, Staben(BZO) \nItaly"
 }
 
 export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000"
