@@ -12,8 +12,8 @@ const Footer = () => {
     const color = useColorModeValue("pageColor.light", "pageColor.dark")
 
     return (
-        <VStack bg={bg} color={color} zIndex="12" m="0px !important" w="100%" minH="200px" zIndex="20" pos="relative" justifyContent="center" alignItems="center">
-            <Box as="hr" w="100%" />
+        <VStack bg={bg} color={color} zIndex="12" m="0px !important" w="100%" minH="200px" pos="relative" justifyContent="center" alignItems="center">
+            <Box display="none" as="hr" w="100%" />
             <Container>
                 <Flex w="100%" flexDirection={{base: "column", md: "row"}} flexWrap="wrap" 
                 justifyContent={{base: "flex-start", md: "space-between"}} alignItems={{base: "flex-center", md: "flex-start"}} 

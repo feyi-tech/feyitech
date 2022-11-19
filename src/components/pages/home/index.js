@@ -60,34 +60,42 @@ const HomePage = ({projectsList}) => {
             img2={bannerImage2} drop1={drop1} drop2={drop2} drop3={drop3} 
             title={t("common:title")} desc={t("common:sitedesc")} 
             mb={{base: "55px !important", md: "75px !important"}} />
-            
-            <Box w="100%" position="relative">
-                <Box pos="absolute" zIndex="0" overflow="hidden" w="100%" h="100%" 
-                left="0" bottom="0">
-                    <Box pos="absolute" bottom="3px" w="100%">
-                        <HomeTaping alignSelf={"center"} flexShrink="0" 
-                        fill={useColorModeValue("rgb(40, 13, 95)", "rgb(244, 238, 255)")} />
-                    </Box>
-                </Box>
 
-                <Container textAlign="left" pos="relative" bg="transparent !important">
-                    <VStack w={{base: "100%", md: "50%"}} 
-                    justifyContent="flex-start" alignItems="flex-start">
-                        <Text as="p" fontWeight="600">
-                            {t("done-projects")}
-                        </Text>
-                        <Text as="h2" fontSize={{base: "1.5rem", md: "2.2rem"}} 
-                        textTransform="uppercase" 
-                        color="#27C827" lineHeight="1.1" m="0px !important" 
-                        mb={{base: "35px !important", md: "55px !important"}} 
-                        fontWeight="bold">
-                            {t("done-softwares")}
-                        </Text>
-                    </VStack>
-                </Container>
-                
-                <Box w="100%" bg={homeBg2} mt="0.5rem">
-                    <Container textAlign="left" pos="relative" bg="transparent !important">
+            <Box w="100%">
+                <Box pos="relative" d="flex" flexDir={"column"} justifyContent={"center"} alignItems={"center"} 
+                zIndex="1">
+                    <Container>
+                        <Box pos="absolute" zIndex="-1" overflow="hidden" w="100%" h={{base: "250px", md: "300px"}} 
+                        left="0" bottom="-3">
+                            <Box pos="absolute" bottom="3px" w="100%">
+                                <HomeTaping alignSelf={"center"} flexShrink="0" fill={useColorModeValue("rgb(40, 13, 95)", "rgb(244, 238, 255)")} />
+                            </Box>
+                        </Box>
+
+                        <VStack w={{base: "100%", md: "50%"}} 
+                        justifyContent="flex-start" alignItems="flex-start">
+                            <Text as="p" fontWeight="600">
+                                {t("done-projects")}
+                            </Text>
+                            <Text as="h2" fontSize={{base: "1.5rem", md: "2.2rem"}} 
+                            textTransform="uppercase" 
+                            color="#27C827" lineHeight="1.1" m="0px !important" 
+                            mb={{base: "35px !important", md: "55px !important"}} 
+                            fontWeight="bold">
+                                {t("done-softwares")}
+                            </Text>
+                        </VStack>
+                    </Container>
+                </Box>
+            </Box>
+
+            <Box w="100%">
+                <Box pos={"relative"} d="flex" flexDirection="column" alignItems="center" zIndex="1" 
+                px="0px"
+                pb="48px"
+                pt="0px"
+                bg={homeBg2}>
+                    <Container>
                         <Flex w="100%" flexWrap="wrap">
                             {
                                 projects.map((v, index) => {
@@ -99,13 +107,11 @@ const HomePage = ({projectsList}) => {
                         </Flex>
                     </Container>
                 </Box>
+          </Box>
 
-            </Box>
-            
         </PageBody>
     )
 }
-
 HomePage.Project = Project
 
 export default HomePage

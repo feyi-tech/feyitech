@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run open && npm run dev-1",
-    "dev-1": "next dev -p 3005",
-    "open": "start http://dev.domain.com:3005",
+    "dev-1": "next dev -p 3006",
+    "open": "start http://dev.domain.com:3006",
     "build": "next build",
-    "start": "next start -p 3005",
+    "start": "next start -p 3006",
     "pm-start": "pm2 start npm --name \"feyitech\" -i max -- start",
     "pm-reload": "pm2 reload \"feyitech\""
   },

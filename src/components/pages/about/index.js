@@ -23,7 +23,7 @@ const StatCounter = ({count, title, lang, ...props}) => {
     return (
         <VStack justifyContent="center" alignItems="center" mt="0px !important">
             <Text as={"div"} fontSize="64px" fontWeight="700" fontStyle="normal" textAlign="center" {...props}>{toLocaleString(count, lang, 0)}+</Text>
-            <Text as="div" color={color} w={{base: "120px", lg: "96px"}} fontSize="16px" lineHeight="1.25" fontWeight="400" w="120px" textAlign="center" pt="1.2em" pb="1em">{title}</Text>
+            <Text as="div" color={color} w={{base: "120px", lg: "96px"}} fontSize="16px" lineHeight="1.25" fontWeight="400" textAlign="center" pt="1.2em" pb="1em">{title}</Text>
         </VStack>
     )
 }
@@ -49,7 +49,6 @@ const Customer = ({lightBgLogo, darkBgLogo, ...props}) => {
     )
 }
 
-//https://lasoft.org/about/
 const AboutPage = ({projectsCounts, citiesCounts, customers}) => {
     const { t, lang } = useTranslation("about")
 

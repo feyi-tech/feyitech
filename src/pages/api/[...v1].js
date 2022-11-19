@@ -52,6 +52,9 @@ export const API_OPTIONS = {
 }
 
 const Data = (req, res) => {
+    if(process.env.NODE_ENV === 'production' || !API_OPTIONS.debug) {
+        console.log = () => {}
+    }
 
     NextData(req, res, API_OPTIONS)
 }

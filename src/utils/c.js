@@ -22,7 +22,7 @@ export const SEC_COLOR = "rgb(14,203,129)"
 export const BTN_COLOR = "#fff"
 export const BTN_BG = "#f0b528"
 
-export const APP_NAME = "FeyiTech"
+export const APP_NAME = "Feyitech"
 export const AIR_DROP_ACTIVE = true;
 export const PRESALE_ACTIVE = true;
 export const FUNDING_ACTIVE = false;
@@ -38,8 +38,8 @@ export const DB_DEFAULT_LOCALE = "en"
 
 export const CONTACT = {
     email: "hello@feyitech.com",//"hello@feyitech.com",
-    mobile: "+39 323 826 7650",
-    address: "Via Nazionale 46, Staben(BZO) \nItaly"
+    mobile: "+234 813 072 9216",
+    address: "NO 4 Iseoluwa street, Adegbayi, Ibadan, \nNigeria"
 }
 
 export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000"
@@ -158,7 +158,7 @@ export const SOCIAL_LINKS = {
         link: `https://behance.net/feyitech`,
         icon: mIcon,
         settings: {
-            disabled: true
+            disabled: false
         },
         getButton: size => {
             return <FaBehance size={size} h={size} />
