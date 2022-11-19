@@ -53,7 +53,7 @@ const SingleBlogPost = ({
         <PageBody link="/projects" title={t('title')} description={t('desc')}>
             <Container>
                 <Box w="100%">
-                    <Text as="h2" fontSize="2.7rem" textTransform="uppercase" lineHeight="1.2" mb="2rem" fontWeight="bold" color="#3929c5">{title}</Text>
+                    <Text as="h2" fontSize="2.7rem" textTransform="uppercase" lineHeight="1.2" mb="2rem" fontWeight="bold" color="#27C827">{title}</Text>
                     <Box as="hr" w="100%" m="0px !important" mb="20px !important" />
                     <SplitLayout mt="3rem !important">
                         <SplitLayout.First as={VStack} justifyContent="flex-start" alignItems="flex-start">
@@ -69,13 +69,13 @@ const SingleBlogPost = ({
                         </SplitLayout.First>
                         <SplitLayout.Second as={HStack} justifyContent={{base: "flex-start", md: "flex-end"}} alignItems={{base: "flex-start", md: "center"}}>
                             <Box as={Link} href="#">
-                                <FaFacebookSquare size="24px" color="#3929c5" />
+                                <FaFacebookSquare size="24px" color="#27C827" />
                             </Box>
                             <Box as={Link} href="#" ml="1.32rem !important">
-                                <FaTwitterSquare size="24px" color="#3929c5" />
+                                <FaTwitterSquare size="24px" color="#27C827" />
                             </Box>
                             <Box as={Link} href="#" ml="1.32rem !important">
-                                <FaLinkedin size="24px" color="#3929c5" />
+                                <FaLinkedin size="24px" color="#27C827" />
                             </Box>
                         </SplitLayout.Second>
                     </SplitLayout>

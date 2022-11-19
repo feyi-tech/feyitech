@@ -19,7 +19,7 @@ const nextConfig = {
             'localhost:2000', 
             'dev.domain.com:3005', 
             '192.168.43.58:3005', 
-            "websalient.com",
+            "feyitech.com",
         ],
         loader: "imgix",
         path: "",

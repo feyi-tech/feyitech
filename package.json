@@ -9,8 +9,8 @@
     "open": "start http://dev.domain.com:3005",
     "build": "next build",
     "start": "next start -p 3005",
-    "pm-start": "pm2 start npm --name \"websalient\" -i max -- start",
-    "pm-reload": "pm2 reload \"websalient\""
+    "pm-start": "pm2 start npm --name \"feyitech\" -i max -- start",
+    "pm-reload": "pm2 reload \"feyitech\""
   },
   "author": "",
   "license": "ISC",

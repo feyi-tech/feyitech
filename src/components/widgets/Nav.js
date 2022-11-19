@@ -9,6 +9,7 @@ import Link from "./Link"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
+import theme from "../../../theme"
 
 const MenuItem = ({as, children, href, ...props}) => {
     const router = useRouter()
@@ -79,6 +80,8 @@ const initSticky = () => {
 const Nav = ({enableMobileStick, ...props}) => {
     const { t } = useTranslation("header")
     const navBg = useColorModeValue("navbarBg.light", "navbarBg.dark")
+    const color = useColorModeValue('navbarColor.light', 'navbarColor.dark')
+    const shadow = `0px 5px 21px -5px ${useColorModeValue(theme?.colors?.navbarShadow.light, theme?.colors?.navbarShadow.dark)}`
 
     const [menuOpened, setMenuOpened] = useState(false)
 
@@ -91,7 +94,7 @@ const Nav = ({enableMobileStick, ...props}) => {
         w={{base: !menuOpened? "100%" : "85vw", md: "100%"}} 
         justifyContent={{base: !menuOpened? "space-bwtween" : "space-around", md: "space-between"}} alignItems="center" 
         p={{base: "15px", md: "35px"}} 
-        bg={{base: navBg}}
+        bg={{base: navBg}} boxShadow={shadow}
         pos={{base: !menuOpened? "relative" : "absolute", md: "relative"}} top="0" right="0" zIndex="20" {...props}>
             <HStack>
                 <HStack as={Link} href="/">

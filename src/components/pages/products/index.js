@@ -81,7 +81,7 @@ const ProductsPage = ({products, services}) => {
             <Container>
                 <VStack w={{base: "100%", md: "50%"}} justifyContent="flex-start" alignItems="flex-start" mb="95px">
                     <Text as="h2" fontSize="2.2rem" textTransform="uppercase" 
-                    color="#3929c5" lineHeight="1.1" fontWeight="bold" mb="2rem">
+                    color="#27C827" lineHeight="1.1" fontWeight="bold" mb="2rem">
                         {t('title')}
                     </Text>
                     <Text as="p" mb="9rem" fontSize="1.08rem">

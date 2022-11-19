@@ -1,4 +1,5 @@
 const { getSession } = require('next-auth/client')
+import { FaGalacticSenate } from "react-icons/fa"
 import Feature from "../../database/models/Feature"
 import Package from "../../database/models/Package"
 import PackageFeature from "../../database/models/PackageFeature"
@@ -35,7 +36,7 @@ const tablesMap = {
 }
 
 export const API_OPTIONS = {
-    debug: true,
+    debug: false,
     dbInfo: {
         credentials: dbCredentials,
         API_OPTIONS: {},

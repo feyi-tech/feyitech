@@ -30,7 +30,10 @@ export default function Link({href, disabled, shallow, locale, children, isButto
         )
     }
     return (
-        <Text as={L} href={href} locale={locale || lang} shallow={shallow}>
+        <Text as={L} href={href} locale={locale || lang} shallow={shallow} 
+        _hover={{
+            textDecoration: "none !important"
+        }}>
             <Text as="a" 
             cursor="pointer"
             href={buildLink(href, {isContractAddress: isContractAddress})}

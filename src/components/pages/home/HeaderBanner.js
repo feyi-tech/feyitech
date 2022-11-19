@@ -1,5 +1,6 @@
 import { Box, HStack, Image, useColorModeValue, VStack , Text} from "@chakra-ui/react";
 import Float from "../../animations/Float";
+import HomeTaping from "../../svg/HomeTaping";
 
 
 const Style = () => {
@@ -67,7 +68,9 @@ export default function HeaderBanner({img1, img2, drop1, drop2, drop3, title, de
     const subColor = useColorModeValue("pageColor.light", "pageColor.dark")
 
     return (
-        <HStack alignItems="flex-start" minH="400px" p={{base: "40px 0 0 0 !important", md: "40px 0 0 0 !important"}} m="0 auto !important" h="calc(100vh - (5vh + calc(56px + 5vh) + 10vh + 30px))" 
+        <HStack alignItems="flex-start" minH="400px" 
+        p={{base: "40px 0 0 0 !important", md: "40px 0 0 0 !important"}} 
+        m="0 auto !important" h="calc(100vh - (5vh + calc(56px + 5vh) + 10vh + 30px))" 
             w="100%" pos="relative"
             _before={{
                 display: "table",
@@ -75,14 +78,14 @@ export default function HeaderBanner({img1, img2, drop1, drop2, drop3, title, de
             }}
             _after={{
                 clear: "both"
-            }} {...props} className="yellow-drop">
+            }} {...props} className="yellow-drop" >
             <Box w={{base: "100%", md: "40%"}} h="100%" pos="relative" display={{base: "none", md: "block"}}>
                 <Image src={drop1} className="yellow-drop-1" />
                 <Image src={drop3} className="yellow-drop-3" />
                 <Float as={Image} src={img1} className="i-mac" />
             </Box>
             <Box w={{base: "100%", md: "60%"}} className="rgh" h="100%">
-                <Text as="h1" color="#3929c5" fontSize={{base: "1.8rem", md: "2.8rem"}} fontWeight="bold" textTransform="uppercase" 
+                <Text as="h1" color="#27C827" fontSize={{base: "1.8rem", md: "2.8rem"}} fontWeight="bold" textTransform="uppercase" 
                 pos="relative"
                 lineHeight="calc(1em + 0.5vh)" m="initial" mb={{base: "1.5rem", md: "3.5rem"}} zIndex="12" maxWidth="calc(50rem + 5vw)" 
                 textAlign={{base: "center", md: "left"}}>
@@ -98,6 +101,9 @@ export default function HeaderBanner({img1, img2, drop1, drop2, drop3, title, de
                 minH={{base: "calc(150px + 8vmax)"}} />
             </Box>
             <Style />
+            <Box display="none" pos="absolute" zIndex="0" overflow="hidden" w="100%" h="50px" 
+            left="-5" right="-5" bottom="0px" bg="#f00">
+            </Box>
         </HStack>
     )
 } 

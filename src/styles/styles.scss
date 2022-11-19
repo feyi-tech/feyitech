@@ -1,4 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
 
 $sidebar-width: 270px;
 $icon-size: 35px;
@@ -10,13 +13,31 @@ $breakpoint-xl: 1200px;
 $bg: #f4f4f4;
 $color: #222329;
 
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 :root {
   font-size: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #27C827;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: #e6f1e6 0px 0px 5px inset;
+  border-radius: 10px;
 }
 
 html, body {
   width: 100%;
   overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 body {

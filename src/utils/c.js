@@ -22,7 +22,7 @@ export const SEC_COLOR = "rgb(14,203,129)"
 export const BTN_COLOR = "#fff"
 export const BTN_BG = "#f0b528"
 
-export const APP_NAME = "EarnChain"
+export const APP_NAME = "FeyiTech"
 export const AIR_DROP_ACTIVE = true;
 export const PRESALE_ACTIVE = true;
 export const FUNDING_ACTIVE = false;
@@ -33,11 +33,11 @@ export const TITLE_SEPARATOR = " - "
 export const CONTACT_FORM_ID = "W5uiXq2U"
 export const G_RECAPTCHA_KEY = "6LeJPmUcAAAAADC7yY49R5rVKuEpxTohfVFRT24m"
 
-export const URL_BASE = "http://dev.domain.com:3005"
+export const URL_BASE = "http://feyitech.com"
 export const DB_DEFAULT_LOCALE = "en"
 
 export const CONTACT = {
-    email: "hello@websalient.com",//"hello@websalient.com",
+    email: "hello@feyitech.com",//"hello@feyitech.com",
     mobile: "+39 323 826 7650",
     address: "Via Nazionale 46, Staben(BZO) \nItaly"
 }
@@ -95,7 +95,7 @@ export const LOCAL_STORAGE = {
 
 export const SOCIAL_LINKS = {
     twitter: {
-        link: `https://www.twitter.com/websalient`,
+        link: `https://www.twitter.com/feyi_tech`,
         icon: twIcon,
         settings: {
             disabled: false
@@ -125,10 +125,10 @@ export const SOCIAL_LINKS = {
         }
     },
     facebook: {
-        link: `https://facebook.com/websalient`,
+        link: `https://facebook.com/feyitech`,
         icon: fbIcon,
         settings: {
-            disabled: false
+            disabled: true
         },
         getButton: size => {
             return <FaFacebook size={size} h={size} />
@@ -145,7 +145,7 @@ export const SOCIAL_LINKS = {
         }
     },
     github: {
-        link: `https://github.com/websalient`,
+        link: `https://github.com/feyi-tech`,
         icon: mIcon,
         settings: {
             disabled: false
@@ -155,10 +155,10 @@ export const SOCIAL_LINKS = {
         }
     },
     behance: {
-        link: `https://behance.net/websalient`,
+        link: `https://behance.net/feyitech`,
         icon: mIcon,
         settings: {
-            disabled: false
+            disabled: true
         },
         getButton: size => {
             return <FaBehance size={size} h={size} />
